@@ -84,7 +84,7 @@ export default function SignIn(props) {
     };
 
     axios
-      .post("https://bari9056.loca.lt/v1/login", payload)
+      .post("http://localhost:8090/v1/login", payload)
       .then((response) => {
         setLoading(false);
         setCommonState({
